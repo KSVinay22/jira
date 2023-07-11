@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open URL in New Tab</title>
+    <style>
+        .form-container {
+            margin: 20px;
+        }
+        .form-container input[type="text"] {
+            padding: 10px;
+            width: 300px;
+        }
+        .form-container input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <input type="text" id="urlInput" placeholder="Enter URL">
+        <input type="submit" value="Submit" onclick="openURL()">
+    </div>
+
+    <script>
+        function openURL() {
+            var url = document.getElementById("urlInput").value;
+            if (url !== "") {
+                uu = "https://zuora-sandbox-383.atlassian.net/secure/MoveIssue!default.jspa?id=" + url //"657548"
+                window.open(uu, "_blank");
+            }
+        }
+    </script>
+</body>
+</html>
